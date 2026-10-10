@@ -10,6 +10,7 @@ The personal portfolio of **Pranav Praveen**, also known as TwistedVis. It prese
 - [Lenis](https://lenis.darkroom.engineering/) for smooth scrolling when motion is allowed
 - Fontshare Cabinet Grotesk + General Sans, Google Fonts JetBrains Mono
 - Netlify for deployment
+- A DeBug-inspired ambient canvas constellation with geometric particles, connecting lines, pointer attraction, and tap ripples
 
 ## Local development
 
@@ -42,7 +43,7 @@ Live site: [twistedvis-portfolio.netlify.app](https://twistedvis-portfolio.netli
 ## Accessibility and performance
 
 - Semantic sections and headings, visible focus styles, descriptive link text, and an accessible interactive trace.
-- `prefers-reduced-motion` disables smooth scrolling, looping trace animation, cursor motion, and reveal transitions.
+- `prefers-reduced-motion` disables smooth scrolling, looping trace animation, ambient particle movement, ripples, cursor motion, and reveal transitions while keeping a static dark constellation fallback.
 - Most of the page is static HTML. Only the system trace and pointer layer hydrate as a React island.
 - No image-heavy hero asset or third-party analytics is loaded.
 

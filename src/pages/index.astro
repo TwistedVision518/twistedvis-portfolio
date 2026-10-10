@@ -1,4 +1,5 @@
 ---
+import AmbientNetwork from '../components/AmbientNetwork';
 import InteractiveSystems from '../components/InteractiveSystems';
 import '../styles/global.css';
 
@@ -68,7 +69,7 @@ const skills = ['Android platform', 'AOSP & custom ROMs', 'Device trees', 'Kerne
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content="Pranav Praveen is a custom ROM maintainer, Linux systems builder, and cybersecurity student building systems with personality." />
-    <meta name="theme-color" content="#E8EDF0" />
+    <meta name="theme-color" content="#0B0E17" />
     <link rel="canonical" href="https://twistedvis-portfolio.netlify.app" />
     <meta property="og:title" content="Pranav Praveen / TwistedVis" />
     <meta property="og:description" content="Custom ROMs, Linux systems, and security tools from a builder who makes stubborn systems behave." />
@@ -83,6 +84,7 @@ const skills = ['Android platform', 'AOSP & custom ROMs', 'Device trees', 'Kerne
     <title>Pranav Praveen / TwistedVis</title>
   </head>
   <body>
+    <div class="ambient-layer" aria-hidden="true"><AmbientNetwork client:load /></div>
     <header class="site-header">
       <a class="brand" href="#top"><span class="brand-mark">TV</span><span>TwistedVis</span></a>
       <nav aria-label="Main navigation">

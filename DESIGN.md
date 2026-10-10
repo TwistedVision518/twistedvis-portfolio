@@ -1,17 +1,17 @@
 ---
 # gstack: design-md-format=spec
 name: TwistedVis Portfolio
-description: A tactile, asymmetric maintainer's workbench for systems with personality.
+description: A dark, tactile, asymmetric maintainer's workbench for systems with personality.
 colors:
-  primary: "#2F59C7"
-  on-primary: "#F4F6F5"
-  surface: "#F4F6F5"
-  text: "#16252C"
-  text-muted: "#587078"
-  accent: "#E5AE3C"
-  success: "#2D806A"
-  warning: "#E5AE3C"
-  error: "#D9634B"
+  primary: "#AEBEFF"
+  on-primary: "#0B0E17"
+  surface: "#131827"
+  text: "#F4F8FF"
+  text-muted: "#AEB8CC"
+  accent: "#F0B95C"
+  success: "#7BD7B2"
+  warning: "#F0B95C"
+  error: "#F07C68"
 typography:
   display:
     fontFamily: "Cabinet Grotesk"
@@ -49,7 +49,7 @@ The portfolio is a maintainer's workbench: part Android repair bench, part indep
 
 ## Composition
 
-Use an asymmetric editorial canvas with a persistent practical header, a poster-like hero, and full-width project work surfaces. Projects are a connected maintenance map rather than a 3-column grid. Solid panels, rule lines, device traces, and hard offsets provide depth. No glow, decorative blobs, or nested card stacks.
+Use an asymmetric editorial canvas with a persistent practical header, a poster-like hero, and full-width project work surfaces. Projects are a connected maintenance map rather than a 3-column grid. The page sits over a fixed DeBug-inspired constellation of geometric particles and connecting lines. Solid panels, rule lines, device traces, and hard offsets provide depth. No glow, decorative blobs, or nested card stacks.
 
 ## Typography
 
@@ -57,11 +57,11 @@ Cabinet Grotesk is the display voice, verified from Fontshare for 700 and 800. G
 
 ## Color and material
 
-The base is a cool workshop mist (`#E8EDF0`) with deep slate structure (`#16252C`). Blueprint blue (`#2F59C7`) marks active paths and links; signal ochre (`#E5AE3C`) calls attention to state; circuit red (`#D9634B`) is reserved for selected warnings. Surfaces are solid and printed-looking, with hairline rules and offset shadows.
+The base is near-black (`#0B0E17`) with a raised slate surface (`#131827`). Nebula blue (`#AEBEFF`) marks active paths and links; signal ochre (`#F0B95C`) calls attention to state; circuit red (`#F07C68`) is reserved for selected warnings. Surfaces are translucent enough to let the ambient constellation pass through, with hairline slate rules and offset shadows.
 
 ## Motion
 
-Motion is expressive but functional: a scroll progress line, a hero trace that routes through real system layers, project surfaces that settle into place, and a cursor field that reacts only on pointer-fine devices. Every motion has a static state. `prefers-reduced-motion` disables Lenis, transitions, cursor effects, and looping trace animation.
+Motion is expressive but functional: a fixed canvas constellation of geometric particles and connecting lines, pointer attraction and tap ripples, a scroll progress line, a hero trace that routes through real system layers, project surfaces that settle into place, and a cursor field that reacts only on pointer-fine devices. The canvas pauses when hidden and has a static fallback. `prefers-reduced-motion` disables Lenis, looping trace animation, particle movement, ripples, cursor motion, and reveal transitions.
 
 ## Deliberate risks
 

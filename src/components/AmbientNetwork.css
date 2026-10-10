@@ -1,0 +1,55 @@
+.ambient-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: #0b0e17;
+}
+
+.ambient-layer::before {
+  position: absolute;
+  inset: 0;
+  content: '';
+  opacity: .6;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(174, 190, 255, .1), transparent 28%),
+    radial-gradient(circle at 84% 70%, rgba(103, 82, 183, .09), transparent 30%),
+    radial-gradient(circle at 45% 100%, rgba(43, 116, 151, .06), transparent 32%);
+}
+
+.ambient-layer::after {
+  position: absolute;
+  inset: 0;
+  content: '';
+  opacity: .16;
+  background-image: linear-gradient(rgba(174, 190, 255, .1) 1px, transparent 1px), linear-gradient(90deg, rgba(174, 190, 255, .1) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: linear-gradient(to bottom, black, transparent 85%);
+}
+
+.ambient-layer astro-island {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.ambient-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .72;
+  pointer-events: none;
+}
+
+@media (max-width: 760px) {
+  .ambient-layer::after { background-size: 54px 54px; }
+  .ambient-canvas { opacity: .54; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-layer::before { opacity: .48; }
+  .ambient-layer::after { opacity: .1; }
+  .ambient-canvas { opacity: .3; }
+}
