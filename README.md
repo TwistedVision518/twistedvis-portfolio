@@ -31,6 +31,8 @@ npm run preview
 
 Netlify uses the settings in `netlify.toml`: `npm run build` with `dist` as the publish directory.
 
+Live site: [twistedvis-portfolio.netlify.app](https://twistedvis-portfolio.netlify.app)
+
 ## Content and research
 
 - `docs/research.md` contains the GitHub research used to write the site, including verified limits and prompt-sourced details.

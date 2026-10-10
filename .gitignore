@@ -25,4 +25,6 @@ pnpm-debug.log*
 
 # local gstack workbench artifacts
 .gstack/
-.gstack/
+
+# Local Netlify folder
+.netlify/
