@@ -20,3 +20,20 @@ Consult these guides before working on related tasks:
 - [Adding or managing content](https://docs.astro.build/en/guides/content-collections/)
 - [Adding styles or using Tailwind](https://docs.astro.build/en/guides/styling/)
 - [Supporting multiple languages](https://docs.astro.build/en/guides/internationalization/)
+
+## Skill routing
+
+When a request matches an available gstack skill, invoke it via the Skill tool. Route only to skills in the session's available-skills list; answer directly for quick questions or small scoped edits.
+
+Key routing rules:
+
+- Product ideas or brainstorming → `/office-hours`
+- Strategy or scope → `/plan-ceo-review`
+- Architecture → `/plan-eng-review`
+- Design system or plan review → `/design-consultation` or `/plan-design-review`
+- Full review pipeline → `/autoplan`
+- Bugs or errors → `/investigate`
+- QA or testing site behavior → `/qa` or `/qa-only`
+- Code review or diff check → `/review`
+- Visual polish → `/design-review`
+- Ship, deploy, or PR → `/ship` or `/land-and-deploy`
