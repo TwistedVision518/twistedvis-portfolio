@@ -84,7 +84,7 @@ const skills = ['Android platform', 'AOSP & custom ROMs', 'Device trees', 'Kerne
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="TwistedVis home"><span class="brand-mark">TV</span><span>TwistedVis</span></a>
+      <a class="brand" href="#top"><span class="brand-mark">TV</span><span>TwistedVis</span></a>
       <nav aria-label="Main navigation">
         <a href="#about">about</a>
         <a href="#work">work</a>
@@ -107,8 +107,9 @@ const skills = ['Android platform', 'AOSP & custom ROMs', 'Device trees', 'Kerne
         </div>
           <div class="hero-visual-wrap">
           <div class="hero-visual-note note-top">systems with personality <span>✳</span></div>
-          <div class="hero-visual" aria-label="Animated system trace showing device tree, kernel, power, display, and release layers.">
+          <div class="hero-visual">
             <div class="hero-visual-backdrop" />
+            <p class="sr-only">Interactive system trace: device tree, kernel, power, display, and release layers.</p>
             <InteractiveSystems client:load />
           </div>
           <div class="hero-visual-note note-bottom"><span>01 / 05</span> route: source → user</div>

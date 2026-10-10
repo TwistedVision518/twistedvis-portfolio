@@ -39,7 +39,7 @@ export default function InteractiveSystems() {
     <>
       <motion.div className="scroll-progress" style={{ scaleX: useScrollProgress(reduceMotion) }} aria-hidden="true" />
       <motion.div className="cursor-field" style={{ x: useTransform(springX, [-1, 1], ['0vw', '100vw']), y: useTransform(springY, [-1, 1], ['0vh', '100vh']) }} aria-hidden="true" />
-      <motion.div className="hero-device" style={{ x: reduceMotion ? 0 : deviceX, y: reduceMotion ? 0 : deviceY }} aria-hidden="true">
+      <motion.div className="hero-device" style={{ x: reduceMotion ? 0 : deviceX, y: reduceMotion ? 0 : deviceY }}>
         <div className="device-topline">
           <span>TWISTEDVIS / SYSTEM TRACE</span>
           <span className="device-live"><i /> live</span>
