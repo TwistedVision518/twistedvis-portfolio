@@ -205,9 +205,9 @@ export default function InteractiveSystems() {
             <a href={activeStage.evidenceHref} target="_blank" rel="noreferrer">{activeStage.evidenceLabel} ↗</a>
           </div>
           <div className="device-progress" aria-hidden="true"><span style={{ transform: `scaleX(${progress})` }} /></div>
-          <div className="device-grid-labels" role="list" aria-label="System run stages">
+          <div className="device-grid-labels">
             {systemTrace.map((stage, index) => (
-              <div role="listitem" key={stage.id}>
+              <div key={stage.id}>
                 <button type="button" className={`${index === activeStageIndex ? 'is-active' : ''} stage-${stage.tone}`} aria-current={index === activeStageIndex ? 'step' : undefined} aria-label={`Select ${stage.label}: ${stage.summary}`} onClick={() => handleStageSelect(index)}>
                   <span>{String(index + 1).padStart(2, '0')}</span>
                   {stage.label}

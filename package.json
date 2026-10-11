@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "test:e2e": "astro dev --background && playwright test",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -22,5 +23,8 @@
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0"
   }
 }
